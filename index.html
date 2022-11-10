@@ -1,0 +1,1121 @@
+<html lang="en" style="height: auto;">
+
+<head>
+    <style>
+        .LGLeeN-keyboard-shortcuts-view {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex
+        }
+
+        .LGLeeN-keyboard-shortcuts-view table,
+        .LGLeeN-keyboard-shortcuts-view tbody,
+        .LGLeeN-keyboard-shortcuts-view td,
+        .LGLeeN-keyboard-shortcuts-view tr {
+            background: inherit;
+            border: none;
+            margin: 0;
+            padding: 0
+        }
+
+        .LGLeeN-keyboard-shortcuts-view table {
+            display: table
+        }
+
+        .LGLeeN-keyboard-shortcuts-view tr {
+            display: table-row
+        }
+
+        .LGLeeN-keyboard-shortcuts-view td {
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            display: table-cell;
+            color: #000;
+            padding: 6px;
+            vertical-align: middle;
+            white-space: nowrap
+        }
+
+        .LGLeeN-keyboard-shortcuts-view td .VdnQmO-keyboard-shortcuts-view--shortcut-key {
+            background-color: #e8eaed;
+            border-radius: 2px;
+            border: none;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            color: inherit;
+            display: inline-block;
+            font-family: Google Sans Text, Roboto, Arial, sans-serif;
+            line-height: 16px;
+            margin: 0 2px;
+            min-height: 20px;
+            min-width: 20px;
+            padding: 2px 4px;
+            position: relative;
+            text-align: center
+        }
+    </style>
+    <style>
+        .gm-control-active>img {
+            box-sizing: content-box;
+            display: none;
+            left: 50%;
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .gm-control-active>img:nth-child(1) {
+            display: block
+        }
+
+        .gm-control-active:focus>img:nth-child(1),
+        .gm-control-active:hover>img:nth-child(1),
+        .gm-control-active:active>img:nth-child(1),
+        .gm-control-active:disabled>img:nth-child(1) {
+            display: none
+        }
+
+        .gm-control-active:focus>img:nth-child(2),
+        .gm-control-active:hover>img:nth-child(2) {
+            display: block
+        }
+
+        .gm-control-active:active>img:nth-child(3) {
+            display: block
+        }
+
+        .gm-control-active:disabled>img:nth-child(4) {
+            display: block
+        }
+    </style>
+    <link type="text/css" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700|Google+Sans+Text:400&amp;lang=es">
+    <link type="text/css" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400&amp;text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93&amp;lang=es">
+    <style>
+        .gm-ui-hover-effect {
+            opacity: .6
+        }
+
+        .gm-ui-hover-effect:hover {
+            opacity: 1
+        }
+
+        .gm-ui-hover-effect>span {
+            background-color: #000
+        }
+
+        @media (forced-colors:active),
+        (prefers-contrast:more) {
+            .gm-ui-hover-effect>span {
+                background-color: ButtonText
+            }
+        }
+    </style>
+    <style>
+        .gm-style .gm-style-cc a,
+        .gm-style .gm-style-cc button,
+        .gm-style .gm-style-cc span,
+        .gm-style .gm-style-mtc div {
+            font-size: 10px;
+            box-sizing: border-box
+        }
+
+        .gm-style .gm-style-cc a,
+        .gm-style .gm-style-cc button,
+        .gm-style .gm-style-cc span {
+            outline-offset: 3px
+        }
+    </style>
+    <style>
+        @media print {
+
+            .gm-style .gmnoprint,
+            .gmnoprint {
+                display: none
+            }
+        }
+
+        @media screen {
+
+            .gm-style .gmnoscreen,
+            .gmnoscreen {
+                display: none
+            }
+        }
+    </style>
+    <style>
+        .dismissButton {
+            background-color: #fff;
+            border: 1px solid #dadce0;
+            color: #1a73e8;
+            border-radius: 4px;
+            font-family: Roboto, sans-serif;
+            font-size: 14px;
+            height: 36px;
+            cursor: pointer;
+            padding: 0 24px
+        }
+
+        .dismissButton:hover {
+            background-color: rgba(66, 133, 244, .04);
+            border: 1px solid #d2e3fc
+        }
+
+        .dismissButton:focus {
+            background-color: rgba(66, 133, 244, .12);
+            border: 1px solid #d2e3fc;
+            outline: 0
+        }
+
+        .dismissButton:focus:not(:focus-visible) {
+            background-color: #fff;
+            border: 1px solid #dadce0;
+            outline: none
+        }
+
+        .dismissButton:focus-visible {
+            background-color: rgba(66, 133, 244, .12);
+            border: 1px solid #d2e3fc;
+            outline: 0
+        }
+
+        .dismissButton:hover:focus {
+            background-color: rgba(66, 133, 244, .16);
+            border: 1px solid #d2e2fd
+        }
+
+        .dismissButton:hover:focus:not(:focus-visible) {
+            background-color: rgba(66, 133, 244, .04);
+            border: 1px solid #d2e3fc
+        }
+
+        .dismissButton:hover:focus-visible {
+            background-color: rgba(66, 133, 244, .16);
+            border: 1px solid #d2e2fd
+        }
+
+        .dismissButton:active {
+            background-color: rgba(66, 133, 244, .16);
+            border: 1px solid #d2e2fd;
+            box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15)
+        }
+
+        .dismissButton:disabled {
+            background-color: #fff;
+            border: 1px solid #f1f3f4;
+            color: #3c4043
+        }
+    </style>
+    <style>
+        .gm-style-moc {
+            background-color: rgba(0, 0, 0, .45);
+            pointer-events: none;
+            text-align: center;
+            transition: opacity ease-in-out
+        }
+
+        .gm-style-mot {
+            color: white;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 22px;
+            margin: 0;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%)
+        }
+    </style>
+    <style>
+        .gm-style img {
+            max-width: none;
+        }
+
+        .gm-style {
+            font: 400 11px Roboto, Arial, sans-serif;
+            text-decoration: none;
+        }
+    </style>
+
+    <meta charset="utf-8">
+    <title>Steph Romero</title>
+
+    <meta name="keywords"
+        content="pistaciatheme, pistacia theme, food blog, chef, cook, cooking, eat, food, meals, recipe theme, recipes theme, html5 theme, clean theme, fresh theme">
+    <meta name="author" content="bumbella">
+
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/flexslider.css">
+    <link rel="stylesheet" href="assets/css/socicons.css">
+    <link rel="stylesheet" href="assets/css/hover.css">
+    <link rel="stylesheet" href="assets/css/owlcarousel.css">
+    <link rel="stylesheet" href="assets/css/owlcarousel.css">
+    <link rel="stylesheet" href="assets/css/style-green.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic" rel="stylesheet"
+        type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800,900" rel="stylesheet"
+        type="text/css">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/img/ico/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/ico/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/ico/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/ico/apple-touch-icon-144x144.png">
+
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/50/12a/intl/es_ALL/common.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/50/12a/intl/es_ALL/util.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/50/12a/intl/es_ALL/map.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/50/12a/intl/es_ALL/marker.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/50/12a/intl/es_ALL/onion.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/50/12a/intl/es_ALL/infowindow.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/50/12a/intl/es_ALL/controls.js"></script>
+</head>
+
+<body id="pageTop" class="fixed-navigation">
+
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script>(function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-51760200-6', 'auto'); ga('send', 'pageview');</script>
+
+    <!-- ***** Theme switcher ***** -->
+    <div class="theme-switcher" id="themeSwitcher">
+        <a href="#" class="toggle-button"><i class="fa fa-gear"></i></a>
+        <div class="inner">
+            <h3>Color skin:</h3>
+            <ul class="colors">
+                <li><a href="#" data-color="blue" class="color-blue"></a></li>
+                <li class="active"><a href="#" data-color="green" class="color-green"></a></li>
+                <li><a href="#" data-color="orange" class="color-orange active"></a></li>
+                <li><a href="#" data-color="purple" class="color-purple"></a></li>
+                <li><a href="#" data-color="red" class="color-red"></a></li>
+                <li><a href="#" data-color="yellow" class="color-yellow"></a></li>
+            </ul>
+        </div>
+    </div><!-- /.theme switcher -->
+
+    <!-- ***** Page loader ***** -->
+    <div class="page-loader" style="display: none;">
+        <div class="loading">
+            <div class="loading-spin"></div>
+            <span>Loading...</span>
+        </div>
+    </div><!-- /.page-loader -->
+
+    <!-- ***** Socialbar ***** -->
+    <div id="socialbar" class="socialbar socialbar-fixed socialbar-radius colorizesocial right hidden-xs">
+        <ul>
+            <li><a class="socicon socicon-facebook" href="#" title="Facebook"></a></li>
+            <li><a class="socicon socicon-youtube" href="#" title="YouTube"></a></li>
+            <li><a class="socicon socicon-pinterest" href="#" title="Pinterest"></a></li>
+            <li><a class="socicon socicon-twitter" href="#" title="Twitter"></a></li>
+            <li><a class="socicon socicon-google" href="#" title="Google"></a></li>
+        </ul>
+    </div><!-- /.socialbar -->
+
+
+    <!-- ***** Top Navigation ***** -->
+    <section id="topNavigation" class="top-navigation">
+
+        <nav class="navbar navbar-default" role="navigation">
+
+            <div class="container container-inner">
+
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-menu-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+
+                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo/logo-green.png"
+                            class="img-responsive" alt="Pistacia Restaurant And Food Template"></a>
+
+                </div>
+
+                <div class="collapse navbar-collapse" id="top-menu-collapse">
+
+                    <ul id="top-menu" class="nav navbar-nav navbar-left">
+                        <li class="active">
+                            <a href="/">Page</a>
+                            <ul>
+                                <li class="active"><a href="index.html">Home</a></li>
+                                <li><a href="page-about.html">About</a></li>
+                                <li><a href="page-coming-soon.html">Coming soon</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul><!-- /#top-menu -->
+
+                    <ul id="topIcons" class="nav navbar-nav navbar-right hidden-xs">
+                        <li>
+                            <a href="#" id="desktopSearchButton"><i class="fa fa-search"></i></a>
+                        </li>
+                    </ul><!-- /#topIcons -->
+
+                    <div class="visible-xs mobile-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div><!-- /.mobile-search -->
+
+                </div><!-- /.top-menu-collapse -->
+
+                <div class="desktop-search" id="desktopSearch">
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" id="desktopSearchClose" type="button"><i
+                                    class="fa fa-close"></i></button>
+                        </span>
+                        <input type="text" class="form-control searchField" placeholder="Search...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                </div><!-- /.desktop-search -->
+
+            </div>
+
+        </nav>
+
+    </section><!-- /.top-navigation -->
+
+   <!-- ***** Header ***** -->
+    <header class="header">
+
+        <!-- ***** Welcome ***** -->
+        <div class="welcome-header" id="welcomeHeader">
+
+            <div class="overlay overlay-black-40"></div>
+
+            <div class="welcome-img-slider">
+                <ul class="slides">
+                    <li style="background-image: url(&quot;assets/img/content/img15.jpg&quot;); width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;"
+                        class="flex-active-slide"></li>
+                    <li
+                        style="background-image: url(&quot;assets/img/content/img16.jpg&quot;); width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                    </li>
+                    <li
+                        style="background-image: url(&quot;assets/img/content/img18.jpg&quot;); width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                    </li>
+                    <li
+                        style="background-image: url(&quot;assets/img/content/img14.jpg&quot;); width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                    </li>
+                    <li
+                        style="background-image: url(&quot;assets/img/content/img17.jpg&quot;); width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="welcome-inner">
+
+                <div class="container">
+
+                    <div class="text-slider welcome-flexslider">
+
+
+
+                        <div class="flex-viewport" style="overflow: hidden; position: relative; height: 129px;">
+                            <ul class="slides"
+                                style="height: 1200%; position: absolute; width: 100%; transition-duration: 0.6s; transform: translate3d(0px, -258px, 0px);">
+                                <li class="text-center clone" aria-hidden="true" style="display: block;">Stepahy <span
+                                        class="extra-bold">Romero</span></li>
+                                <li class="text-center" style="display: block;">Angeles <span
+                                        class="extra-bold">Muspa</span></li>
+                                <li class="text-center flex-active-slide" style="display: block;">Algo <span
+                                        class="extra-bold">que decir</span></li>
+                                <li class="text-center" style="display: block;">Tasting <span
+                                        class="extra-bold">menus</span></li>
+                                <li class="text-center" style="display: block;">Carta <span
+                                        class="extra-bold">de Vinos</span></li>
+                                <li class="text-center clone" aria-hidden="true" style="display: block;">Welcome <span
+                                        class="extra-bold">Bienvenue</span></li>
+                            </ul>
+                        </div>
+                    </div>                 
+                    
+                </div>
+
+            </div>
+
+        </div><!-- /.welcome-header -->
+
+    </header>
+
+
+    <!-- ***** Chef text ***** -->
+    <section class="chef" id="chef">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-5">
+                    <img src="assets/img/content/img4.jpg" class="img-responsive"
+                        alt="Pistacia Restaurant And Food Template">
+                </div>
+
+                <div class="col-md-7 chef-text">
+
+                    <h1 class="text-center">Our chef <span class="extra-bold">specialties</span></h1>
+
+                    <p class="text-center">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet,
+                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                        aliquyam erat, sed diam voluptua.
+                    </p>
+
+                    <div class="zigzag"><i class="flaticon flaticon-covered16"></i></div>
+
+                    <div class="row">
+
+                        <div class="card effect__hover col-md-4">
+                            <div class="card__front">
+                                <div class="content text-center">
+                                    <i class="flaticon flaticon-151"></i>
+                                    <h4 class="padding-bottom-5 padding-top-5">Banana cherry chocolate</h4>
+                                    <span class="label label-success label-lg">$125</span>
+                                </div>
+                            </div>
+                            <div class="card__back" style="background-image:url('assets/img/content/thumb4.jpg');">
+                                <div class="content text-center"></div>
+                            </div>
+                        </div><!-- /.card -->
+
+                        <div class="card effect__hover col-md-4">
+                            <div class="card__front">
+                                <div class="content text-center">
+                                    <i class="flaticon flaticon-301"></i>
+                                    <h4 class="padding-bottom-5 padding-top-5">Banana cherry chocolate</h4>
+                                    <span class="label label-success label-lg">$125</span>
+                                </div>
+                            </div>
+                            <div class="card__back" style="background-image:url('assets/img/content/thumb2.jpg');">
+                                <div class="content text-center"></div>
+                            </div>
+                        </div><!-- /.card -->
+
+                        <div class="card effect__hover col-md-4">
+                            <div class="card__front">
+                                <div class="content text-center">
+                                    <i class="flaticon flaticon-452"></i>
+                                    <h4 class="padding-bottom-5 padding-top-5">Banana cherry chocolate</h4>
+                                    <span class="label label-success label-lg">$125</span>
+                                </div>
+                            </div>
+                            <div class="card__back" style="background-image:url('assets/img/content/thumb3.jpg');">
+                                <div class="content text-center"></div>
+                            </div>
+                        </div><!-- /.card -->
+
+                    </div><!-- /.row -->
+
+                </div><!-- /.chef-text -->
+
+            </div><!-- /.row -->
+
+        </div><!-- /.container -->
+
+    </section><!-- /.chef -->
+
+
+    
+    <!-- ***** Special services ***** -->
+    <section id="specialServices" class="special-services">
+
+        <div id="counterParallax" class="counter-parallax">
+
+            <div class="overlay overlay-black-70"></div>
+
+            <div class="container container-inner">
+
+                <div class="quote text-center">
+                    <h1 class="white-color uppercase"><span class="light">Our special</span> <span
+                            class="extra-bold">services</span></h1>
+                </div>
+
+                <div class="counters">
+
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counter text-center rotateInDownLeft-ifAppeared">
+                            <div class="number counter-number" id="counterNumber1">0</div>
+                            <p>Breakfast</p>
+                        </div>
+                    </div><!-- /.col-sm-3 -->
+
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counter text-center rotateInDownRight-ifAppeared">
+                            <div class="number counter-number" id="counterNumber2">0</div>
+                            <p>Drinks</p>
+                        </div>
+                    </div><!-- /.col-sm-3 -->
+
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counter text-center rotateInDownLeft-ifAppeared">
+                            <div class="number counter-number" id="counterNumber3">0</div>
+                            <p>Luches</p>
+                        </div>
+                    </div><!-- /.col-sm-3 -->
+
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counter text-center rotateInDownRight-ifAppeared">
+                            <div class="number counter-number" id="counterNumber4">0</div>
+                            <p>Desserts</p>
+                        </div>
+                    </div><!-- /.col-sm-3 -->
+
+                </div><!-- /#counters -->
+
+            </div><!-- /.container -->
+
+        </div><!-- /#counterParallax -->
+
+    </section><!-- /#specialServices -->
+
+
+    <!-- ***** Offer owl ***** -->
+    <section class="we-can-offer" id="weCanOffer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <h1 class="text-center"><span class="light">We can </span> <span class="extra-bold">Offer</span>
+                    </h1>
+                    <div class="zigzag"><i class="fa fa-bell"></i></div>
+                    <p class="lead">Diam tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                        vero eos et accusam et justo duo dolores et ea rebum. </p>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="offer-owl-carousel owl-carousel owl-theme owl-loaded owl-responsive-600">
+
+                        <!-- /.item -->
+
+                        <!-- /.item -->
+
+                        <!-- /.item -->
+
+                        <!-- /.item -->
+
+                        <!-- /.item -->
+
+                        <!-- /.item -->
+
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage"
+                                style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1365px;">
+                                <div class="owl-item active" style="width: 227.5px; margin-right: 0px;">
+                                    <div class="item">
+                                        <h3><i class="flaticon-circle flaticon-dark flaticon-covered16"></i> Reservation
+                                        </h3>
+                                        <p>Sed cursus lectus ut lorem vehicula finibus. Maecenas vehicula sem at urnaSed
+                                            cursus lectus ut lorem vehicula finibus. Maecenas vehicula sem at urna</p>
+                                        <a href="#" class="btn-more hvr-icon-forward">More</a>
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 227.5px; margin-right: 0px;">
+                                    <div class="item">
+                                        <h3><i class="flaticon-circle flaticon-light flaticon-italian1"></i> Quick Food
+                                        </h3>
+                                        <p>Sed cursus lectus ut lorem vehicula finibus. Maecenas vehicula sem at urnaSed
+                                            cursus lectus ut lorem vehicula finibus. Maecenas vehicula sem at urna</p>
+                                        <a href="#" class="btn-more hvr-icon-forward">More</a>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 227.5px; margin-right: 0px;">
+                                    <div class="item">
+                                        <h3><i class="flaticon-circle flaticon-dark flaticon-soup12"></i> Hot Food</h3>
+                                        <p>Sed cursus lectus ut lorem vehicula finibus. Maecenas vehicula sem at urnaSed
+                                            cursus lectus ut lorem vehicula finibus. Maecenas vehicula sem at urna</p>
+                                        <a href="#" class="btn-more hvr-icon-forward">More</a>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 227.5px; margin-right: 0px;">
+                                    <div class="item">
+                                        <h3><i class="flaticon-circle flaticon-light flaticon-drink24"></i> Beers</h3>
+                                        <p>Sed cursus lectus ut lorem vehicula finibus. Maecenas vehicula sem at urnaSed
+                                            cursus lectus ut lorem vehicula finibus. Maecenas vehicula sem at urna</p>
+                                        <a href="#" class="btn-more hvr-icon-forward">More</a>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 227.5px; margin-right: 0px;">
+                                    <div class="item">
+                                        <h3><i class="flaticon-circle flaticon-dark flaticon-sweet9"></i> Sweets</h3>
+                                        <p>Sed cursus lectus ut lorem vehicula finibus. Maecenas vehicula sem at urnaSed
+                                            cursus lectus ut lorem vehicula finibus. Maecenas vehicula sem at urna</p>
+                                        <a href="#" class="btn-more hvr-icon-forward">More</a>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 227.5px; margin-right: 0px;">
+                                    <div class="item">
+                                        <h3><i class="flaticon-circle flaticon-light flaticon-fish52"></i> Fish Food
+                                        </h3>
+                                        <p>Sed cursus lectus ut lorem vehicula finibus. Maecenas vehicula sem at urnaSed
+                                            cursus lectus ut lorem vehicula finibus. Maecenas vehicula sem at urna</p>
+                                        <a href="#" class="btn-more hvr-icon-forward">More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-controls">
+                            <div class="owl-nav">
+                                <div class="owl-prev" style=""></div>
+                                <div class="owl-next" style=""></div>
+                            </div>
+                            <div class="owl-dots" style="display: none;"></div>
+                        </div>
+                    </div><!-- /.offer-owl-carousel -->
+
+                </div>
+
+            </div><!-- /.row -->
+
+        </div><!-- /.container -->
+
+    </section><!-- /#weCanOffer -->
+
+
+    <!-- ***** Special Dishes ***** -->
+    <section class="special-dishes" id="specialDishes">
+
+        <div class="container">
+
+            <h1 class="text-center"><span class="light">Special</span> <span class="extra-bold">Dishes</span></h1>
+
+            <div class="zigzag"><i class="flaticon flaticon-cutlery6"></i></div>
+
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6">
+                    <p class="text-center lead">Aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. </p>
+                </div>
+            </div>
+
+
+            <div class="btn-toolbar text-center">
+                <ul class="list-tabs portfolio-filters">
+                    <li class="active"><a data-filter="*" href="#">All</a></li>
+                    <li><a data-filter=".meat" href="#">meat</a></li>
+                    <li><a data-filter=".sweet" href="#">sweet</a></li>
+                    <li><a data-filter=".fish" href="#">fish</a></li>
+                </ul>
+            </div>
+
+            <ul class="portfolio-items" style="position: relative; height: 470px;">
+
+                <li class="item meat" data-category="meat" style="position: absolute; left: 0px; top: 0px;">
+                    <div class="item-container">
+                        <figure>
+                            <img src="assets/img/content/thumb1.jpg" alt="Pistacia Restaurant And Food Template">
+                            <figcaption>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <span class="label label-danger">$123</span>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <h3>Bourbon Chicken</h3>
+                                        <span>Josephine Walker</span>
+                                        <a href="#">Take a look</a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </li><!-- /.item -->
+
+                <li class="item fish" data-category="fish" style="position: absolute; left: 235px; top: 0px;">
+                    <div class="item-container">
+                        <figure>
+                            <img src="assets/img/content/thumb2.jpg" alt="Pistacia Restaurant And Food Template">
+                            <figcaption>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <span class="label label-danger">$123</span>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <h3>Bourbon Chicken</h3>
+                                        <span>Josephine Walker</span>
+                                        <a href="#">Take a look</a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </li><!-- /.item -->
+
+                <li class="item sweet" data-category="sweet" style="position: absolute; left: 470px; top: 0px;">
+                    <div class="item-container">
+                        <figure>
+                            <img src="assets/img/content/thumb3.jpg" alt="Pistacia Restaurant And Food Template">
+                            <figcaption>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <span class="label label-danger">$123</span>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <h3>Bourbon Chicken</h3>
+                                        <span>Josephine Walker</span>
+                                        <a href="#">Take a look</a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </li><!-- /.item -->
+
+                <li class="item sweet" data-category="sweet" style="position: absolute; left: 705px; top: 0px;">
+                    <div class="item-container">
+                        <figure>
+                            <img src="assets/img/content/thumb4.jpg" alt="Pistacia Restaurant And Food Template">
+                            <figcaption>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <span class="label label-danger">$123</span>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <h3>Bourbon Chicken</h3>
+                                        <span>Josephine Walker</span>
+                                        <a href="#">Take a look</a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </li><!-- /.item -->
+
+                <li class="item meat" data-category="meat" style="position: absolute; left: 0px; top: 235px;">
+                    <div class="item-container">
+                        <figure>
+                            <img src="assets/img/content/thumb5.jpg" alt="Pistacia Restaurant And Food Template">
+                            <figcaption>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <span class="label label-danger">$123</span>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <h3>Bourbon Chicken</h3>
+                                        <span>Josephine Walker</span>
+                                        <a href="#">Take a look</a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </li><!-- /.item -->
+
+                <li class="item fish" data-category="fish" style="position: absolute; left: 235px; top: 235px;">
+                    <div class="item-container">
+                        <figure>
+                            <img src="assets/img/content/thumb6.jpg" alt="Pistacia Restaurant And Food Template">
+                            <figcaption>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <span class="label label-danger">$123</span>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <h3>Bourbon Chicken</h3>
+                                        <span>Josephine Walker</span>
+                                        <a href="#">Take a look</a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </li><!-- /.item -->
+
+                <li class="item sweet" data-category="sweat" style="position: absolute; left: 470px; top: 235px;">
+                    <div class="item-container">
+                        <figure>
+                            <img src="assets/img/content/thumb7.jpg" alt="Pistacia Restaurant And Food Template">
+                            <figcaption>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <span class="label label-danger">$123</span>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <h3>Bourbon Chicken</h3>
+                                        <span>Josephine Walker</span>
+                                        <a href="#">Take a look</a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </li><!-- /.item -->
+
+                <li class="item meat" data-category="meat" style="position: absolute; left: 705px; top: 235px;">
+                    <div class="item-container">
+                        <figure>
+                            <img src="assets/img/content/thumb8.jpg" alt="Pistacia Restaurant And Food Template">
+                            <figcaption>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <span class="label label-danger">$123</span>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <h3>Bourbon Chicken</h3>
+                                        <span>Josephine Walker</span>
+                                        <a href="#">Take a look</a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </li><!-- /.item -->
+
+            </ul><!-- /.portfolio-items -->
+
+        </div><!-- /.container -->
+
+    </section>
+
+
+    <!-- ***** Footer ***** -->
+    <footer id="footer" class="footer">
+
+        <div class="overlay overlay-black-80"></div>
+
+        <div class="container container-inner">
+
+            <div class="row">
+
+                <div class="col-md-3">
+
+                    <h2><span class="extra-bold">Other</span> <span class="light">Said</span></h2>
+
+                    <div id="carouselOthersaid" class="carousel slide" data-ride="carousel">
+
+                        <div class="carousel-inner" role="listbox">
+
+                            <div class="item">
+
+                                <div class="row">
+
+                                    <div class="col-sm-4">
+                                        <figure class="figure-hubba figure-circle">
+                                            <img class="img-responsive" src="assets/img/content/thumb10.jpg"
+                                                alt="Pistacia Restaurant And Food Template">
+                                            <div class="overlay overlay-black-70"></div>
+                                            <figcaption class="figcaption">
+                                                <a class="icon"><i class="fa fa-search"></i></a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+
+                                    <div class="col-sm-8">
+                                        <i class="fa fa-quote-left"></i>
+                                        ut labore et dolore magna aliquyam erat, sed diam voluptua.<i
+                                            class="fa fa-quote-right"></i>
+                                        <br><br><small>Josephine Walker</small>
+                                    </div>
+
+                                </div>
+
+                            </div><!-- /.item -->
+
+                            <div class="item">
+
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <figure class="figure-hubba figure-circle">
+                                            <img class="img-responsive" src="assets/img/content/thumb10.jpg"
+                                                alt="Pistacia Restaurant And Food Template">
+                                            <div class="overlay overlay-black-70"></div>
+                                            <figcaption class="figcaption">
+                                                <a class="icon"><i class="fa fa-search"></i></a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <i class="fa fa-quote-left"></i>
+                                        ut labore et dolore magna aliquyam erat, sed diam voluptua.<i
+                                            class="fa fa-quote-right"></i>
+                                        <br><br><small>Josephine Walker</small>
+                                    </div>
+                                </div>
+
+                            </div><!-- /.item -->
+
+                            <div class="item active">
+
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <figure class="figure-hubba figure-circle">
+                                            <img class="img-responsive" src="assets/img/content/thumb10.jpg"
+                                                alt="Pistacia Restaurant And Food Template">
+                                            <div class="overlay overlay-black-70"></div>
+                                            <figcaption class="figcaption">
+                                                <a class="icon"><i class="fa fa-search"></i></a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <i class="fa fa-quote-left"></i>
+                                        ut labore et dolore magna aliquyam erat, sed diam voluptua.<i
+                                            class="fa fa-quote-right"></i>
+                                        <br><br><small>Josephine Walker</small>
+                                    </div>
+                                </div>
+
+                            </div><!-- /.item -->
+
+                        </div><!-- /.carousel-inner -->
+
+                    </div><!-- /.carousel-othersaid -->
+
+                </div><!-- /.-col-md-3 -->
+
+                <div class="col-md-3">
+
+                    <h2><span class="extra-bold">Operation</span> <span class="light">Time</span></h2>
+
+                    <ul class="contacts">
+                        <li><i class="fa fa-clock-o"></i> Monday to Thuesday <span class="bold clock">6:00 -
+                                18:00</span></li>
+                        <li><i class="fa fa-clock-o"></i> Friday to Saturdays <span class="bold clock">12:00 -
+                                22:00</span></li>
+                        <li><i class="fa fa-clock-o"></i> Sundays <span class="bold clock">closed</span></li>
+                    </ul>
+
+                </div><!-- /.col-md-3 -->
+
+                <div class="col-md-3">
+
+                    <h2><span class="extra-bold">Contact</span> <span class="light">Us</span></h2>
+
+                    <ul class="contacts">
+                        <li><i class="fa fa-map-marker"></i>753 A 4th St, NY, USA</li>
+                        <li><i class="fa fa-phone"></i>+5 432-234-1234</li>
+                        <li><i class="fa fa-envelope"></i><a href="#">me@medomain.com</a></li>
+                    </ul>
+
+                </div><!-- /.col-md-3 -->
+
+                <div class="col-md-3 about-us">
+
+                    <h2><span class="extra-bold">About</span> <span class="light">Pistacia</span></h2>
+
+                    <div class="">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna
+                    </div>
+
+                </div><!-- /.about-us -->
+
+            </div><!-- /.row -->
+
+        </div><!-- /.container-inner -->
+
+    </footer>
+
+
+    <!-- ***** Bottom bar ***** -->
+    <section class="bottom-bar" id="bottomBar">
+
+        <a href="#pageTop" class="btn btn-white scroll-to"><i class="fa fa-chevron-up"></i></a>
+
+        <div class="container">
+
+            <div class="pull-left">
+                <div class="padding-top-20"><span class="small">Design by Bumbella - Te discere erroribus sed.</span>
+                </div>
+            </div>
+
+            <div class="pull-right">
+                <ul class="clear bottom-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                </ul>
+            </div>
+
+        </div><!-- /.container -->
+
+    </section><!-- /.bottom-bar -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+        <![endif]-->
+
+    <!-- Scripts -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAO7Mg2Cs1qzo_3jkKkZAKY6jtwIlm41-I"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.cookie.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/flexslider.js"></script>
+    <script src="assets/js/owlcarousel.js"></script>
+    <script src="assets/js/easing.js"></script>
+    <script src="assets/js/validate.js"></script>
+    <script src="assets/js/masonry.js"></script>
+    <script src="assets/js/scrollto.js"></script>
+    <script src="assets/js/parallax.js"></script>
+    <script src="assets/js/countup.js"></script>
+    <script src="assets/js/google-mapster.js"></script>
+    <script src="assets/js/isotope.js"></script>
+
+    <!-- Application -->
+    <script src="assets/js/application.js"></script>
+
+    <!-- Scripts only this page -->
+    <script type="text/javascript">
+        APP.init();
+        APP.themeswitcher();
+        APP.stickynav();
+        APP.flexSlider();
+        APP.owlCarousel();
+        APP.reservationForm();
+        APP.createGoogleMap();
+        APP.masonry();
+        APP.parallax();
+        APP.counterNumbers();
+        APP.portfolioIsotope();
+    </script>
+    <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+    </div>
+
+
+</body>
+
+</html>
